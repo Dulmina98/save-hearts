@@ -1,0 +1,26 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+
+  .red-color {
+    color: #C91A21;
+  }
+
+  .btn {
+    background: #C91A21;
+    font-weight: 700;
+    border: none;
+    min-width: 110px;
+
+    &:disabled {
+      opacity: 0.5;
+      background: #C91A21;
+    }
+
+    &:hover {
+      background: #e33139;
+    }
+  }
+}

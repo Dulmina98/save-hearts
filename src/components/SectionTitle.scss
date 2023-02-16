@@ -1,0 +1,20 @@
+.section-title {
+  display: flex;
+  position: relative;
+
+  .red-square {
+    width: 10px;
+    height: 10px;
+    background: #C91A21;
+    position: absolute;
+    top: 34px;
+    left: -20px;
+  }
+
+  .title-text {
+    color: black;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,20 @@
+.navigation-bar {
+
+  .navbar {
+    background: #F6F6F6;
+
+    .navbar-collapse {
+      .navbar-nav {
+
+        a {
+          font-weight: 600;
+          height: 52px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+}
