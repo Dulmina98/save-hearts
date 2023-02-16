@@ -16,6 +16,7 @@ specifiers:
   bootstrap: ^5.2.3
   react: ^18.2.0
   react-bootstrap: ^2.7.2
+  react-bootstrap-icons: ^1.10.2
   react-dom: ^18.2.0
   react-scripts: 5.0.1
   react-select: ^5.7.0
@@ -39,6 +40,7 @@ dependencies:
   bootstrap: 5.2.3_@popperjs+core@2.11.6
   react: 18.2.0
   react-bootstrap: 2.7.2_zula6vjvt3wdocc4mwcxqa6nzi
+  react-bootstrap-icons: 1.10.2_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scripts: 5.0.1_lbj2qj5jpkdgpwup4gbdki3cbq
   react-select: 5.7.0_rhrpnuwl23ewqfh7btz44ilpmq
@@ -8380,6 +8382,15 @@ packages:
       raf: 3.4.1
       regenerator-runtime: 0.13.11
       whatwg-fetch: 3.6.2
+    dev: false
+
+  /react-bootstrap-icons/1.10.2_react@18.2.0:
+    resolution: { integrity: sha512-PC72g6uARdSxZH+ViBbul3FRWKuIhiJajahwt1h0daPBDw789KqpA+x3hrJpSUyQMF0PQ9LfWxu1a0O67bqPeg== }
+    peerDependencies:
+      react: '>=16.8.6'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
     dev: false
 
   /react-bootstrap/2.7.2_zula6vjvt3wdocc4mwcxqa6nzi:
