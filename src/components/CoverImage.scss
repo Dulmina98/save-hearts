@@ -1,0 +1,35 @@
+.cover-image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .cover-image-content {
+    background: rgba(0, 0, 0, 0.47);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+
+    .cover-image-heading {
+      font-weight: 800;
+      font-size: 60px;
+    }
+
+    .cover-image-description {
+      font-weight: 500;
+      font-size: 15px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
