@@ -1,0 +1,16 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  .btn {
+    background: #C91A21;
+    font-weight: 700;
+    border: none;
+    min-width: 110px;
+
+    &:hover {
+      background: #e33139;
+    }
+  }
+}
