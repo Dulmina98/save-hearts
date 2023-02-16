@@ -1,4 +1,5 @@
 .reserve-time {
+  background: #E3E6EB;
 
   .reserve-time-image {
     padding-top: 20px;
@@ -63,6 +64,10 @@
       width: 400px;
       display: flex;
       justify-content: end;
+
+      .btn {
+        width: 120px;
+      }
     }
   }
 }

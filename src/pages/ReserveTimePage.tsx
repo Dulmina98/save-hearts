@@ -72,7 +72,7 @@ export function ReserveTimePage() {
                                 </div>
                             </div>
                             <div className={"mt-4 button-row"}>
-                                <Button className={"mx-4"}>Reserve</Button>
+                                <Button disabled={true} className={"mx-4"}>Reserve</Button>
                                 <Button>Search</Button>
                             </div>
                         </div>
