@@ -12,6 +12,11 @@
           display: flex;
           justify-content: center;
           flex-direction: column;
+          color: black;
+
+          &:hover {
+            color: #C91A21;
+          }
         }
       }
     }
