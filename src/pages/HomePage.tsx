@@ -127,7 +127,7 @@ export function HomePage() {
                                     donation camp. Take the lead and inspire others to join in and give the gift of
                                     life.
                                 </div>
-                                <div className={"link-btn-main mt-5"}>
+                                <div className={"link-btn-main mt-4"}>
                                     <Button className={"link-btn"}>Organize Blood Donation Camp <ChevronRight
                                         color={"#C91A21"}
                                         className={"mb-1 chevron-right"}/></Button>
@@ -137,6 +137,39 @@ export function HomePage() {
                         <Col md={6}>
                             <div className="camp-organize-section-image">
                                 <img src="/assets/images/homepage/camp-organize-doctor.png" alt=""/>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="reserve-time-section bg-pearlWhite">
+                <Container>
+                    <Row>
+                        <Col md={6}>
+                            <div className="reserve-time-section-image">
+                                <img src="/assets/images/homepage/reserve-time-doctor.png" alt=""/>
+                            </div>
+                        </Col>
+                        <Col md={6}>
+                            <div className="reserve-time-section-content">
+                                <div className="homepage-title-main">
+                                    <div className="red-square"></div>
+                                    <div className="homepage-title">Online <span
+                                        className="red-color">Scheduling</span> for Blood Donation
+                                    </div>
+                                </div>
+                                <div className="reserve-time-section-description my-5">Making an appointment for blood
+                                    donation
+                                    can save time and ensure a convenient donation experience. Online appointment
+                                    scheduling, making it easy to check availability and reserve a time slot that works
+                                    for you.
+                                </div>
+                                <div className={"link-btn-main mt-4"}>
+                                    <Button className={"link-btn"}>Reserve a time <ChevronRight
+                                        color={"#C91A21"}
+                                        className={"mb-1 chevron-right"}/></Button>
+                                </div>
                             </div>
                         </Col>
                     </Row>

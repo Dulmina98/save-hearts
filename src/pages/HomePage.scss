@@ -165,4 +165,33 @@
       }
     }
   }
+
+  .reserve-time-section {
+    .reserve-time-section-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+
+      .reserve-time-section-description {
+        text-align: justify;
+        width: 80%;
+        margin-left: 20px;
+      }
+
+      .link-btn-main {
+        width: 80%;
+        margin-left: 20px;
+      }
+    }
+
+    .reserve-time-section-image {
+      width: 100%;
+      padding-top: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
