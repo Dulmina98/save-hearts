@@ -1,8 +1,9 @@
 import {CoverImage} from "../components/CoverImage";
 import {Button, Col, Container, Row} from "react-bootstrap";
-import {SectionTitle} from "../components/SectionTitle";
+import {SectionHeading} from "../components/SectionHeading";
 import "./OragnizeCampPage.scss"
 import React from "react";
+import {SectionSubHeading} from "../components/SectionSubHeading";
 
 export function OrganizeCampPage() {
 
@@ -17,7 +18,7 @@ export function OrganizeCampPage() {
                     <Row>
                         <Col md={6}>
                             <div className={"organize-camp-content"}>
-                                <SectionTitle title={"Blood donation camp organizer"}/>
+                                <SectionHeading title={"Blood donation camp organizer"}/>
                                 <div className={"mt-4 organize-camp-description"}>
                                     An online blood donation camp organizer is a platform that helps plan and manage
                                     blood
@@ -43,7 +44,16 @@ export function OrganizeCampPage() {
             </div>
 
             <div className={"bg-pearlWight"}>
+                <Container>
+                    <Row>
+                        <Col md={6}>
+                            <SectionSubHeading title={"Check blood transfusion service staff availability"}/>
+                        </Col>
+                        <Col md={6}>
 
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </div>
     )
