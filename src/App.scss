@@ -33,6 +33,35 @@
     }
   }
 
+  .link-btn {
+    background: rgba(201, 26, 33, 0);
+    font-weight: 700;
+    border: none;
+    min-width: 110px;
+    border-radius: 5px;
+    color: #C91A21;
+
+    &:disabled {
+      opacity: 0.5;
+      background: rgba(201, 26, 33, 0);
+    }
+
+    &:hover {
+      background: rgba(227, 49, 57, 0);
+      color: #e33139;
+
+      .chevron-right {
+        stroke: #e33139;
+        fill: #e33139;
+      }
+    }
+
+    .chevron-right {
+      stroke: #C91A21;
+    }
+  }
+
+
   .select-item {
     .react-select__control {
       background: rgba(201, 26, 33, 0.2);
