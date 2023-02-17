@@ -108,6 +108,40 @@ export function HomePage() {
                     </Row>
                 </Container>
             </div>
+
+            <div className="camp-organize-section bg-moonlight">
+                <Container>
+                    <Row>
+                        <Col md={6}>
+                            <div className="camp-organize-section-content">
+                                <div className="homepage-title-main">
+                                    <div className="red-square"></div>
+                                    <div className="homepage-title">Every drop counts! <span
+                                        className="red-color">Organize</span> a <span className="red-color">blood donation camp</span> and
+                                        save a life.
+                                    </div>
+                                </div>
+                                <div className="camp-organize-section-description my-5">
+                                    Every blood donation has the potential to save a life. As a leader in your
+                                    community, you have the ability to make a real difference by organizing a blood
+                                    donation camp. Take the lead and inspire others to join in and give the gift of
+                                    life.
+                                </div>
+                                <div className={"link-btn-main mt-5"}>
+                                    <Button className={"link-btn"}>Organize Blood Donation Camp <ChevronRight
+                                        color={"#C91A21"}
+                                        className={"mb-1 chevron-right"}/></Button>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={6}>
+                            <div className="camp-organize-section-image">
+                                <img src="/assets/images/homepage/camp-organize-doctor.png" alt=""/>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         </div>
     )
 }

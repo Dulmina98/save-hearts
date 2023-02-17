@@ -4,16 +4,19 @@
     display: flex;
 
     .red-square {
+      min-width: 10px;
+      min-height: 10px;
       width: 10px;
       height: 10px;
       background: #C91A21;
-      margin-top: 34px;
+      margin-top: 28px;
     }
 
     .homepage-title {
       font-size: 40px;
       margin-left: 10px;
       font-weight: 800;
+      line-height: 1.2;
     }
   }
 
@@ -132,7 +135,34 @@
         text-align: center;
       }
     }
+  }
 
+  .camp-organize-section {
+    .camp-organize-section-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
 
+      .camp-organize-section-description {
+        text-align: justify;
+        width: 80%;
+        margin-left: 20px;
+      }
+
+      .link-btn-main {
+        width: 80%;
+        margin-left: 20px;
+      }
+    }
+
+    .camp-organize-section-image {
+      width: 100%;
+      padding-top: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
