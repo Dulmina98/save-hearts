@@ -1,7 +1,7 @@
 import "./ReserveTimePage.scss"
 import {CoverImage} from "../components/CoverImage";
 import {Button, Col, Container, Row} from "react-bootstrap";
-import {SectionTitle} from "../components/SectionTitle";
+import {SectionHeading} from "../components/SectionHeading";
 import React from 'react'
 import Select from 'react-select'
 
@@ -52,7 +52,7 @@ export function ReserveTimePage() {
                     </Col>
                     <Col md={5}>
                         <div className="reserve-time-content">
-                            <SectionTitle title={"Reserve a time"}/>
+                            <SectionHeading title={"Reserve a time"}/>
                             <div className={"section-description"}>
                                 Checking blood transfusion service staff availability is the process of determining
                                 whether the necessary

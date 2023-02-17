@@ -1,6 +1,6 @@
-import "./SectionTitle.scss"
+import "./SectionHeading.scss"
 
-export function SectionTitle(props: { title: string }) {
+export function SectionHeading(props: { title: string }) {
 
     return (
         <div className="section-title">
