@@ -1,0 +1,23 @@
+.organize-camp {
+  background: #E3E6EB;
+
+  .organize-camp-image {
+    padding-top: 70px;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .organize-camp-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    .organize-camp-description {
+      text-align: justify;
+      width: 90%;
+    }
+  }
+}
