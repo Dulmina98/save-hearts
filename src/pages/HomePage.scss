@@ -1,10 +1,13 @@
 .homepage {
   .landing-section {
+    position: relative;
+
     .landing-section-text-col {
       display: flex;
       justify-content: center;
       flex-direction: column;
       height: 100%;
+      width: 100%;
 
       .logo-text {
         font-size: 90px;
@@ -31,6 +34,35 @@
 
       img {
         width: 100%;
+      }
+    }
+
+    .landing-section-cards-row {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 70%;
+      left: 15%;
+      top: 85%;
+
+      .landing-section-card {
+        width: 250px;
+        height: 335px;
+        border-bottom: 15px solid #C91A21;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 9px 15px -9px rgba(0, 0, 0, 0.50);
+
+        .landing-section-card-title {
+          font-weight: 700;
+          font-size: 20px;
+        }
+
+        .landing-section-card-description {
+          text-align: justify;
+          font-weight: 400;
+          font-size: 14px;
+        }
       }
     }
   }
