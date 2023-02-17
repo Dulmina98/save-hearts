@@ -1,6 +1,6 @@
-import {Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import "./HomePage.scss"
-import {Activity, DropletFill, PieChartFill} from "react-bootstrap-icons";
+import {Activity, ChevronRight, DropletFill, PieChartFill} from "react-bootstrap-icons";
 
 export function HomePage() {
 
@@ -55,6 +55,56 @@ export function HomePage() {
                                 </div>
                             </div>
                         </div>
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="bg-pearlWhite past-statistics-section">
+                <Container>
+                    <Row>
+                        <Col md={7}>
+                            <div className="past-statistics-section-image">
+                                <img src="/assets/images/homepage/past-statistics-doctor.png" alt=""/>
+                            </div>
+                        </Col>
+                        <Col md={5}>
+                            <div className="past-statistics-section-content">
+                                <div className="homepage-title-main">
+                                    <div className="red-square"></div>
+                                    <div className="homepage-title">Last Month <span
+                                        className="red-color">Statistics</span></div>
+                                </div>
+                                <div className="past-statistics-item-row mt-5">
+                                    <div className="past-statistics-item">
+                                        <div className="past-statistics-amount red-color">1248</div>
+                                        <div className="past-statistics-title">Total Blood Collection</div>
+                                    </div>
+                                    <div className="past-statistics-item">
+                                        <div className="past-statistics-amount red-color">987</div>
+                                        <div className="past-statistics-title">Total Blood Issues</div>
+                                    </div>
+                                </div>
+                                <div className="past-statistics-item-row mt-4">
+                                    <div className="past-statistics-item">
+                                        <div className="past-statistics-amount red-color">38</div>
+                                        <div className="past-statistics-title">Organized Blood Donation Camps Amount
+                                        </div>
+                                    </div>
+                                    <div className="past-statistics-item">
+                                        <div className="past-statistics-amount red-color">1625</div>
+                                        <div className="past-statistics-title">Total Blood Donors</div>
+                                    </div>
+                                </div>
+                                <div className={"past-statistics-description mt-5"}>Your precious donation of blood can
+                                    save as many as 3 lives.
+                                </div>
+
+                                <div className={"link-btn-main mt-5"}>
+                                    <Button className={"link-btn"}>Go to Dashboard <ChevronRight color={"#C91A21"}
+                                                                                                 className={"mb-1 chevron-right"}/></Button>
+                                </div>
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
             </div>
