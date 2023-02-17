@@ -101,7 +101,7 @@ export function OrganizeCampPage() {
                                                 className={"select-item"} classNamePrefix="react-select"/>
                                     </div>
                                 </div>
-                                <div className={"mt-4 button-row"}>
+                                <div className={"button-row"}>
                                     <Button>Search</Button>
                                 </div>
                             </div>
