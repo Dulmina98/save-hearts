@@ -1,0 +1,37 @@
+.homepage {
+  .landing-section {
+    .landing-section-text-col {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+
+      .logo-text {
+        font-size: 90px;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      .logo-description {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      .slogan {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+      }
+    }
+
+    .landing-section-image {
+      padding-top: 40px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
