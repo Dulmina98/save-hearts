@@ -5,7 +5,7 @@ export function NavigationBar() {
 
     return (
         <div className="navigation-bar">
-            <Navbar expand="lg">
+            <Navbar expand="lg" className={"bg-pearlWhite"}>
                 <Container>
                     <Navbar.Brand href="#home"><img src="/assets/images/logos/save-hearts-logo.png"
                                                     alt="save-hearts-logo" width={175}/></Navbar.Brand>

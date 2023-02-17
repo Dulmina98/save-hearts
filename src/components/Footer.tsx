@@ -4,7 +4,7 @@ import {Discord, Facebook, Telegram, Twitter} from "react-bootstrap-icons";
 export function Footer() {
 
     return (
-        <div className="footer pt-5 pb-4">
+        <div className="footer pt-5 pb-4 bg-pearlWhite">
             <div className={"footer-logo pt-3"}>
                 <img src="/assets/images/logos/save-hearts-logo-main.png" alt=""/>
             </div>
