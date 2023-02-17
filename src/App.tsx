@@ -1,16 +1,12 @@
 import React from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {NavigationBar} from "./components/NavigationBar";
-import {Footer} from "./components/Footer";
-import {OrganizeCampPage} from "./pages/OrganizeCampPage";
+import {HomePage} from "./pages/HomePage";
 
 function App() {
     return (
         <div className="App">
-            <NavigationBar/>
-            <OrganizeCampPage/>
-            <Footer/>
+            <HomePage/>
         </div>
     );
 }

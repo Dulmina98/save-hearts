@@ -128,9 +128,10 @@ export function HomePage() {
                                     life.
                                 </div>
                                 <div className={"link-btn-main mt-4"}>
-                                    <Button className={"link-btn"}>Organize Blood Donation Camp <ChevronRight
-                                        color={"#C91A21"}
-                                        className={"mb-1 chevron-right"}/></Button>
+                                    <Button href={"/organize-camp"} className={"link-btn"}>Organize Blood Donation
+                                        Camp <ChevronRight
+                                            color={"#C91A21"}
+                                            className={"mb-1 chevron-right"}/></Button>
                                 </div>
                             </div>
                         </Col>
@@ -166,7 +167,7 @@ export function HomePage() {
                                     for you.
                                 </div>
                                 <div className={"link-btn-main mt-4"}>
-                                    <Button className={"link-btn"}>Reserve a time <ChevronRight
+                                    <Button href={"/reserve-time"} className={"link-btn"}>Reserve a time <ChevronRight
                                         color={"#C91A21"}
                                         className={"mb-1 chevron-right"}/></Button>
                                 </div>
