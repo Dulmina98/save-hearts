@@ -35,6 +35,7 @@ export function OrganizeCampPage() {
         {value: 24, label: 'Batticaloa'},
         {value: 25, label: 'Ampara'},
     ];
+    const n = 10;
 
     const date = [
         {value: 1, label: '02nd March 2023'},
