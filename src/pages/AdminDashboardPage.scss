@@ -35,4 +35,56 @@
       }
     }
   }
+
+  .dashboard-tab-content {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .blood-requirement-content {
+
+    .required-blood-amount-content {
+      background: rgba(201, 26, 33, 0.1);
+      border-radius: 5px;
+      border: 2px solid #C91A21;
+    }
+
+    .required-blood-amount-text {
+      text-align: center;
+
+      .required-blood-amount {
+        font-size: 40px;
+        font-weight: 800;
+      }
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      width: 575px;
+      margin: 0 auto;
+
+      .btn {
+        width: 275px;
+      }
+    }
+
+    .past-blood-requirement-chart {
+      .chart-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.manual-update-modal {
+  .manual-update-description {
+    font-size: 15px;
+  }
+
+  .modal-button {
+    width: 150px;
+  }
 }
