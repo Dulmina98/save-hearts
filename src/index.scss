@@ -105,4 +105,21 @@ body {
       }
     }
   }
+
+  .form-control {
+    border: none;
+    background: rgba(201, 26, 33, 0.2);
+    border-radius: 5px;
+
+    &::placeholder {
+      color: black !important;
+      font-weight: 400;
+    }
+
+    &:focus {
+      background: rgba(201, 26, 33, 0.2);
+      box-shadow: 0 0 0 1px rgba(201, 26, 33, 0.5);
+    }
+
+  }
 }
