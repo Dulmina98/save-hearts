@@ -6,7 +6,6 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {OrganizeCampPage} from "./pages/OrganizeCampPage";
 import {ReserveTimePage} from "./pages/ReserveTimePage";
 import {NavigationBar} from "./components/NavigationBar";
-import {Footer} from "./components/Footer";
 import {AdminDashboardPage} from "./pages/AdminDashboardPage";
 
 ReactDOM.render(
@@ -18,7 +17,6 @@ ReactDOM.render(
             <Route path="/reserve-time" element={<ReserveTimePage/>}/>
             <Route path="/admin-dashboard" element={<AdminDashboardPage/>}/>
         </Routes>
-        <Footer/>
     </BrowserRouter>
 
     , document.getElementById('root'))

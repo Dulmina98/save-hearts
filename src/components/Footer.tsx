@@ -1,10 +1,10 @@
 import "./Footer.scss"
 import {Discord, Facebook, Telegram, Twitter} from "react-bootstrap-icons";
 
-export function Footer() {
+export function Footer(props: { bgColor: string }) {
 
     return (
-        <div className="footer pt-5 pb-4 bg-pearlWhite">
+        <div className={`footer pt-5 pb-4 ${props.bgColor}`}>
             <div className={"footer-logo pt-3"}>
                 <img src="/assets/images/logos/save-hearts-logo-main.png" alt=""/>
             </div>
