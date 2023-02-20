@@ -6,7 +6,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {OrganizeCampPage} from "./pages/OrganizeCampPage";
 import {ReserveTimePage} from "./pages/ReserveTimePage";
 import {NavigationBar} from "./components/NavigationBar";
-import {Footer} from "./components/Footer";
+import {AdminDashboardPage} from "./pages/AdminDashboardPage";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -15,8 +15,8 @@ ReactDOM.render(
             <Route path="/" element={<App/>}/>
             <Route path="/organize-camp" element={<OrganizeCampPage/>}/>
             <Route path="/reserve-time" element={<ReserveTimePage/>}/>
+            <Route path="/admin-dashboard" element={<AdminDashboardPage/>}/>
         </Routes>
-        <Footer/>
     </BrowserRouter>
 
     , document.getElementById('root'))
