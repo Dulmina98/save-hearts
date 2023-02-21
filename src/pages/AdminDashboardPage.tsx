@@ -13,7 +13,7 @@ import {
     Tooltip,
 } from 'chart.js';
 import {Footer} from "../components/Footer";
-import {BloodRequirementContet} from "../components/admin-dashboard/BloodRequirementContet";
+import {BloodRequirementContet} from "../components/admin-dashboard/blood-requirement-content/BloodRequirementContet";
 
 
 ChartJS.register(

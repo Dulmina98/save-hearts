@@ -2,7 +2,7 @@ import "./BloodRequirementContent.scss"
 import {Button, Form, Modal} from "react-bootstrap";
 import {Line} from "react-chartjs-2";
 import React, {useState} from "react";
-import {data} from "../../pages/AdminDashboardPage";
+import {data} from "../../../pages/AdminDashboardPage";
 import Select from "react-select";
 
 export function BloodRequirementContet() {
