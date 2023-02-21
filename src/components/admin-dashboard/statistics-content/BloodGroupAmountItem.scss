@@ -1,0 +1,41 @@
+.blood-group-amount-item {
+  width: 150px;
+  height: 75px;
+  background: rgba(201, 26, 33, 0.1);
+  border-radius: 5px;
+  border: 2px solid #C91A21;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .blood-group-amount-item-content {
+    display: flex;
+    justify-content: center;
+
+    .blood-group {
+      font-weight: 700;
+      color: #C91A21;
+      font-size: 25px;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .blood-amount {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: 600;
+      color: black;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
+
+}
