@@ -14,6 +14,7 @@ import {
 } from 'chart.js';
 import {Footer} from "../components/Footer";
 import {BloodRequirementContet} from "../components/admin-dashboard/blood-requirement-content/BloodRequirementContet";
+import {StatisticsContent} from "../components/admin-dashboard/statistics-content/StatisticsContent";
 
 
 ChartJS.register(
@@ -93,6 +94,9 @@ export function AdminDashboardPage() {
                         <Col md={9}>
                             {activeTab === "bloodRequirement" &&
                                 <BloodRequirementContet/>
+                            }
+                            {activeTab === "statistics" &&
+                                <StatisticsContent/>
                             }
                         </Col>
                     </Row>
