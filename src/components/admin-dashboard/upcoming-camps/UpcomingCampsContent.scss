@@ -1,0 +1,30 @@
+.upcoming-camps-content {
+
+  .upcoming-camps-table {
+    border: 2px solid #C91A21;
+    border-radius: 5px;
+
+    .table > :not(caption) > * > * {
+      background: #E3E6EB;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) > * {
+      background: white;
+    }
+
+    .table {
+      th {
+        background: rgba(201, 26, 33, 0.1);
+      }
+
+      .expected-blood-units {
+        width: 200px;
+      }
+
+      .table-striped {
+        background: #F6F6F6 !important;
+      }
+
+    }
+  }
+}

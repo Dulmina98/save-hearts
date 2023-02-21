@@ -15,6 +15,7 @@ import {
 import {Footer} from "../components/Footer";
 import {BloodRequirementContet} from "../components/admin-dashboard/blood-requirement-content/BloodRequirementContet";
 import {StatisticsContent} from "../components/admin-dashboard/statistics-content/StatisticsContent";
+import {UpcomingCampsContent} from "../components/admin-dashboard/upcoming-camps/UpcomingCampsContent";
 
 
 ChartJS.register(
@@ -97,6 +98,9 @@ export function AdminDashboardPage() {
                             }
                             {activeTab === "statistics" &&
                                 <StatisticsContent/>
+                            }
+                            {activeTab === "upcomingCamps" &&
+                                <UpcomingCampsContent/>
                             }
                         </Col>
                     </Row>
