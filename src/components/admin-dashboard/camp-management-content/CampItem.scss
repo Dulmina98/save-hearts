@@ -1,0 +1,32 @@
+.camp-item {
+  width: 150px;
+  height: 75px;
+  background: rgba(201, 26, 33, 0.1);
+  border-radius: 5px;
+  border: 2px solid #C91A21;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .camp-item-content {
+    text-align: center;
+
+    .camp-item-amount {
+      font-weight: 700;
+      color: #C91A21;
+      font-size: 25px;
+      width: 100%;
+    }
+
+    .camp-item-title {
+      width: 100%;
+      font-weight: 600;
+      color: black;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+
+
+}
