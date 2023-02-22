@@ -13,7 +13,10 @@ import {
     Tooltip,
 } from 'chart.js';
 import {Footer} from "../components/Footer";
-import {BloodRequirementContet} from "../components/admin-dashboard/BloodRequirementContet";
+import {BloodRequirementContet} from "../components/admin-dashboard/blood-requirement-content/BloodRequirementContet";
+import {StatisticsContent} from "../components/admin-dashboard/statistics-content/StatisticsContent";
+import {UpcomingCampsContent} from "../components/admin-dashboard/upcoming-camps/UpcomingCampsContent";
+import {CampManagementContent} from "../components/admin-dashboard/camp-management-content/CampManagementContent";
 
 
 ChartJS.register(
@@ -93,6 +96,15 @@ export function AdminDashboardPage() {
                         <Col md={9}>
                             {activeTab === "bloodRequirement" &&
                                 <BloodRequirementContet/>
+                            }
+                            {activeTab === "statistics" &&
+                                <StatisticsContent/>
+                            }
+                            {activeTab === "campManagement" &&
+                                <CampManagementContent/>
+                            }
+                            {activeTab === "upcomingCamps" &&
+                                <UpcomingCampsContent/>
                             }
                         </Col>
                     </Row>

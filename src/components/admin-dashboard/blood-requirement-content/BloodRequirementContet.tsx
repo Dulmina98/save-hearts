@@ -2,8 +2,9 @@ import "./BloodRequirementContent.scss"
 import {Button, Form, Modal} from "react-bootstrap";
 import {Line} from "react-chartjs-2";
 import React, {useState} from "react";
-import {data} from "../../pages/AdminDashboardPage";
+import {data} from "../../../pages/AdminDashboardPage";
 import Select from "react-select";
+import {SectionSubHeading} from "../../SectionSubHeading";
 
 export function BloodRequirementContet() {
 
@@ -44,7 +45,8 @@ export function BloodRequirementContet() {
 
                 </div>
                 <div className="past-blood-requirement-chart mb-5">
-                    <div className="chart-title mb-4">Past year required blood amount</div>
+                    <div className="dashboard-section-sub-title mb-4"><SectionSubHeading
+                        title={"Past year required blood amount"}/></div>
                     <Line data={data}/>
                 </div>
             </div>

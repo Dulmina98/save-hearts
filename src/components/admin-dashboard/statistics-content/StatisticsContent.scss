@@ -1,0 +1,44 @@
+.statistics-content {
+  width: 100%;
+
+  .blood-groups-amount-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    row-gap: 20px;
+
+    .blood-group-amount-item {
+      margin: 0 auto;
+    }
+  }
+
+  .this-month-statistics-main {
+    width: 80%;
+    height: 150px;
+    background: rgba(201, 26, 33, 0.1);
+    border-radius: 5px;
+    border: 2px solid #C91A21;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .this-month-statistic-item {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .this-month-statistic-item-amount {
+        font-size: 25px;
+        font-weight: 700;
+        color: #C91A21;
+      }
+
+      .this-month-statistic-item-title {
+        font-weight: 700;
+      }
+    }
+  }
+
+}
