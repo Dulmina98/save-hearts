@@ -47,7 +47,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Our Team Details
 
-* Team ID :- SE-27
+* Team Number :- SE-27
 * Team Name :- Team Xcode
 * Team University :- Informatics Institute of Technology (IIT Campus)
 * Team Members :-
@@ -61,4 +61,3 @@ To learn React, check out the [React documentation](https://reactjs.org/).
          </ul>
        </html>
 * Repositary Link :- https://github.com/Dulmina98/save-hearts
-
