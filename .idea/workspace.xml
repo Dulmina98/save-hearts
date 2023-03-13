@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="Install Raleway font">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/OrganizeCampPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OrganizeCampPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlModules/ARIMA.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlModules/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlModules/lstm_2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlModules/lstm_3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlModules/lstm_4.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlModules/savehearts_lstm.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/1savi/Desktop/3/datta-able-bootstrap-dashboard&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\1savi\\Desktop\\1\\save-hearts\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/1savi/Desktop/3/datta-able-bootstrap-dashboard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\1savi\\Desktop\\save-hearts\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\1savi\Desktop\1\save-hearts\src\pages\adminPanel" />
