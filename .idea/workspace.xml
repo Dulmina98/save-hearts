@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="Install Raleway font">
+    <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="Install">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CampRequestForm.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CampRequestForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlModules/ARIMA.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlModules/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlModules/lstm_2.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlModules/lstm_3.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlModules/lstm_4.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mlModules/savehearts_lstm.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/OrganizeCampPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OrganizeCampPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +23,19 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/savindu" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,16 +55,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/1savi/Desktop/3/datta-able-bootstrap-dashboard",
+    "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\1savi\\Desktop\\save-hearts\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "E:\\sdgp\\save-hearts\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -77,6 +91,7 @@
       <workItem from="1676845015125" duration="1131000" />
       <workItem from="1676850995232" duration="2610000" />
       <workItem from="1676884192707" duration="661000" />
+      <workItem from="1678876682299" duration="13612000" />
     </task>
     <task id="LOCAL-00001" summary="Install bootstrap and sass">
       <created>1676567960899</created>

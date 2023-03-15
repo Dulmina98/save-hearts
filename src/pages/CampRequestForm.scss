@@ -1,0 +1,19 @@
+.button-row {
+  width: 400px;
+  display: flex;
+  justify-content: end;
+
+  .btn {
+    width: 120px;
+  }
+
+  .btn-cancel {
+    background-color: #505050;
+    color: white;
+
+  }
+
+  .btn-cancel:hover {
+    background-color: #727272;
+  }
+}

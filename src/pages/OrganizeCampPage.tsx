@@ -70,7 +70,8 @@ export function OrganizeCampPage() {
                                         and save lives in the community.
                                     </div>
                                     <div className="mt-5">
-                                        <Button className={"px-3 py-2"}>Send Your Application</Button>
+                                        <Button href={"/camp-request-form"} className={"px-3 py-2"}>Send Your
+                                            Application</Button>
                                     </div>
                                 </div>
                             </Col>
