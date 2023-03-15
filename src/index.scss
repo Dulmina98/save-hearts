@@ -4,6 +4,10 @@
 
 body {
 
+  .page {
+    min-height: calc(100vh - 440px);
+  }
+
   .red-color {
     color: #C91A21;
   }
@@ -30,6 +34,10 @@ body {
 
     &:hover {
       background: #e33139;
+    }
+
+    &:active {
+      background-color: #791317 !important;
     }
   }
 
@@ -96,5 +104,22 @@ body {
         }
       }
     }
+  }
+
+  .form-control {
+    border: none;
+    background: rgba(201, 26, 33, 0.2);
+    border-radius: 5px;
+
+    &::placeholder {
+      color: black !important;
+      font-weight: 400;
+    }
+
+    &:focus {
+      background: rgba(201, 26, 33, 0.2);
+      box-shadow: 0 0 0 1px rgba(201, 26, 33, 0.5);
+    }
+
   }
 }
