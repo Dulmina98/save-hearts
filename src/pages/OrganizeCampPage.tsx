@@ -36,6 +36,7 @@ export function OrganizeCampPage() {
         {value: 24, label: 'Batticaloa'},
         {value: 25, label: 'Ampara'},
     ];
+    const n = 10;
 
     const date = [
         {value: 1, label: '02nd March 2023'},
@@ -69,7 +70,8 @@ export function OrganizeCampPage() {
                                         and save lives in the community.
                                     </div>
                                     <div className="mt-5">
-                                        <Button className={"px-3 py-2"}>Send Your Application</Button>
+                                        <Button href={"/camp-request-form"} className={"px-3 py-2"}>Send Your
+                                            Application</Button>
                                     </div>
                                 </div>
                             </Col>

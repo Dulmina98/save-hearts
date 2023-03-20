@@ -1,6 +1,6 @@
 import "./ReserveTimePage.scss"
 import {CoverImage} from "../components/CoverImage";
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from 'react-bootstrap';
 import {SectionHeading} from "../components/SectionHeading";
 import React from 'react'
 import Select from 'react-select'
