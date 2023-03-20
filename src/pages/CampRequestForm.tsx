@@ -2,9 +2,9 @@ import Select from "react-select";
 import {Footer} from "../components/Footer";
 import {Button} from "react-bootstrap";
 import "./CampRequestForm.scss"
-import axios from "axios";
 import React, {useState} from 'react'
 import {Link, useNavigate} from 'react-router-dom';
+import axios from "axios";
 
 export function CampRequestForm() {
     const districts = [
@@ -55,6 +55,7 @@ export function CampRequestForm() {
     }
     const onSubmit = async ({e}: { e: any }) => {
         e.preventDefault();
+
 
         await axios.post("http://localhost:8000/request-blood-camp", request);
         navigate("/");
