@@ -57,7 +57,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
              <li> Dulmina Wijegunarathne : https://github.com/Dulmina98 </li>
              <li> Nipun Chamika : https://github.com/NipunCdev </li>
              <li> Yasith Lankesha : https://github.com/yasithlankesha24 </li>
-             <li> Dumeka Kumara : https://github.com/Dumeka </li>
+             <li> Dumeka Kumara : https://github.com/Dumekalk </li>
          </ul>
        </html>
 * Repositary Link :- https://github.com/Dulmina98/save-hearts
