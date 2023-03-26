@@ -1,7 +1,12 @@
 import {Button, Container, Nav, Navbar} from "react-bootstrap";
 import "./NavigationBar.scss"
+import {useAuthContext} from "../hooks/useAuthContext";
+import {useLogout} from "../hooks/useLogout";
 
 export function NavigationBar() {
+
+    const {logout, isPending} = useLogout();
+    const {user} = useAuthContext();
 
     return (
         <div className="navigation-bar">
@@ -18,8 +23,13 @@ export function NavigationBar() {
                             <Nav.Link href="/reserve-time" className={"mx-2"}>Reserve a Time</Nav.Link>
                             <Nav.Link disabled={true} href="#link" className={"mx-2"}>Contact Us</Nav.Link>
                             <Nav.Link href="/admin-dashboard" className={"mx-2"}>Dashboard</Nav.Link>
-                            <Nav.Link disabled={true} href="#link"><Button className={"px-4 py-2"}>Sign
-                                in</Button></Nav.Link>
+                            {!user && <Nav.Link href="/login"><Button className={"px-4 py-2"}>Login</Button></Nav.Link>}
+                            {user &&
+                                <>
+                                    {!isPending && <Button className={"px-4 py-2"} onClick={logout}>Logout</Button>}
+                                    {isPending && <Button disabled={true} className={"px-4 py-2"}>Login out...</Button>}
+                                </>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
