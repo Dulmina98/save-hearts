@@ -2,11 +2,21 @@ import {Button, Container, Nav, Navbar} from "react-bootstrap";
 import "./NavigationBar.scss"
 import {useAuthContext} from "../hooks/useAuthContext";
 import {useLogout} from "../hooks/useLogout";
+import {useEffect, useState} from "react";
 
 export function NavigationBar() {
 
     const {logout, isPending} = useLogout();
-    const {user} = useAuthContext();
+    const {user, authIsReady} = useAuthContext()
+    const [isAdmin, setIsAdmin] = useState(false)
+
+    useEffect(() => {
+        setIsAdmin(false)
+        if (user?.email === "admin1@gmail.com" || user?.email === "admin2@gmail.com" || user?.email === "admin3@gmail.com") {
+            setIsAdmin(true);
+        }
+    }, [user])
+
 
     return (
         <div className="navigation-bar">
@@ -22,7 +32,8 @@ export function NavigationBar() {
                             <Nav.Link href="/organize-camp" className={"mx-2"}>Organize a Camp</Nav.Link>
                             <Nav.Link href="/reserve-time" className={"mx-2"}>Reserve a Time</Nav.Link>
                             <Nav.Link disabled={true} href="#link" className={"mx-2"}>Contact Us</Nav.Link>
-                            <Nav.Link href="/admin-dashboard" className={"mx-2"}>Dashboard</Nav.Link>
+                            {user && isAdmin &&
+                                <Nav.Link href="/admin-dashboard" className={"mx-2"}>Dashboard</Nav.Link>}
                             {!user && <Nav.Link href="/login"><Button className={"px-4 py-2"}>Login</Button></Nav.Link>}
                             {user &&
                                 <>
