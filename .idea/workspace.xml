@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="Install">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logos/save-hearts-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavigationBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavigationBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,8 @@
     <MESSAGE value="Instaal bootstrap and sass" />
     <MESSAGE value="Install bootstrap and sass" />
     <MESSAGE value="Install Raleway font" />
-    <option name="LAST_COMMIT_MESSAGE" value="Install Raleway font" />
+    <MESSAGE value="XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
