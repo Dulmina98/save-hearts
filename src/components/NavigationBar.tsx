@@ -26,8 +26,9 @@ export function NavigationBar() {
                             {!user && <Nav.Link href="/login"><Button className={"px-4 py-2"}>Login</Button></Nav.Link>}
                             {user &&
                                 <>
-                                    {!isPending && <Button className={"px-4 py-2"} onClick={logout}>Logout</Button>}
-                                    {isPending && <Button disabled={true} className={"px-4 py-2"}>Login out...</Button>}
+                                    {!isPending && <Nav.Link><Button className={"px-4"} onClick={logout}>Logout</Button></Nav.Link>}
+                                    {isPending && <Nav.Link><Button disabled={true} className={"px-4"}>Login
+                                        out...</Button></Nav.Link>}
                                 </>
                             }
                         </Nav>
