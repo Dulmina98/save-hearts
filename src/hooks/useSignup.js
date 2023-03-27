@@ -1,12 +1,14 @@
 import {useEffect, useState} from 'react'
 import {projectAuth, projectFirestore} from '../firebase/config'
 import {useAuthContext} from './useAuthContext'
+import {useNavigate} from "react-router-dom";
 
 export const useSignup = () => {
     const [isCancelled, setIsCancelled] = useState(false)
     const [error, setError] = useState(null)
     const [isPending, setIsPending] = useState(false)
     const {dispatch} = useAuthContext()
+    const navigate = useNavigate()
 
     const signup = async (firstName, lastName, email, nic, mobileNum, selectBloodGroupValue, password) => {
         setError(null)
@@ -32,6 +34,9 @@ export const useSignup = () => {
 
             setIsPending(false) // set isPending to false if signup completes successfully
             dispatch({type: 'SIGNUP_SUCCESS', payload: res.user})
+            setTimeout(() => {
+                navigate('/')
+            }, 1500)
         } catch (err) {
             setError(err.message)
             console.error(err)

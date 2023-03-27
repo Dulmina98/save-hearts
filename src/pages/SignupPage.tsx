@@ -20,6 +20,15 @@ export function SignupPage() {
     const [password, setPassword] = useState('')
     const {signup, isPending, error} = useSignup()
 
+    const handleBloodGroupChange = (selectedOption: UserBloodGroups | null) => {
+        if (selectedOption) {
+            setSelectedBloodGroupValue(selectedOption.id);
+        } else {
+            setSelectedBloodGroupValue('');
+        }
+        setSelectBloodGroup(selectedOption);
+    };
+
     const handleSubmit = (e: any) => {
         e.preventDefault()
         signup(firstName, lastName, email, nic, mobileNum, selectedBloodGroupValue, password)
@@ -34,14 +43,6 @@ export function SignupPage() {
         setNearestCity('');
         setPassword('');
     }
-    const handleBloodGroupChange = (selectedOption: UserBloodGroups | null) => {
-        if (selectedOption) {
-            setSelectedBloodGroupValue(selectedOption.id);
-        } else {
-            setSelectedBloodGroupValue('');
-        }
-        setSelectBloodGroup(selectedOption);
-    };
 
     return (
         <div className="signup page">
