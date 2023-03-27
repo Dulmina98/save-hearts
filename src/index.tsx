@@ -1,27 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {OrganizeCampPage} from "./pages/OrganizeCampPage";
-import {ReserveTimePage} from "./pages/ReserveTimePage";
-import {NavigationBar} from "./components/NavigationBar";
-import {AdminDashboardPage} from "./pages/AdminDashboardPage";
-import {CampRequestForm} from "./pages/CampRequestForm";
 
-ReactDOM.render(
-    <BrowserRouter>
-        <NavigationBar/>
-        <Routes>
-            <Route path="/" element={<App/>}/>
-            <Route path="/organize-camp" element={<OrganizeCampPage/>}/>
-            <Route path="/reserve-time" element={<ReserveTimePage/>}/>
-            <Route path="/admin-dashboard" element={<AdminDashboardPage/>}/>
-            <Route path="/camp-request-form" element={<CampRequestForm/>}/>
-        </Routes>
-    </BrowserRouter>
-
-    , document.getElementById('root'))
+const root = ReactDOM.createRoot(
+    document.getElementById('root') as HTMLElement
+);
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
