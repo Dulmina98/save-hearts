@@ -1,9 +1,10 @@
 import "./ReserveTimePage.scss"
 import {CoverImage} from "../components/CoverImage";
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from 'react-bootstrap';
 import {SectionHeading} from "../components/SectionHeading";
 import React from 'react'
 import Select from 'react-select'
+import {Footer} from "../components/Footer";
 
 export function ReserveTimePage() {
 
@@ -38,49 +39,53 @@ export function ReserveTimePage() {
     ];
 
     return (
-        <div className="reserve-time page">
-            <CoverImage imgPath={"/assets/images/reserve-time/reserve-time-cover-image.png"}
-                        heading={"Reserve a time to donate blood"}
-                        headingDescription={"Online reservation allows individuals to schedule a time to donate blood through an online platform."}/>
+        <div>
+            <div className="reserve-time page">
+                <CoverImage imgPath={"/assets/images/reserve-time/reserve-time-cover-image.png"}
+                            heading={"Reserve a time to donate blood"}
+                            headingDescription={"Online reservation allows individuals to schedule a time to donate blood through an online platform."}/>
 
-            <Container>
-                <Row>
-                    <Col md={7}>
-                        <div className={"reserve-time-image"}>
-                            <img src="/assets/images/reserve-time/reserve-time-doctor.png" alt=""/>
-                        </div>
-                    </Col>
-                    <Col md={5}>
-                        <div className="reserve-time-content">
-                            <SectionHeading title={"Reserve a time"}/>
-                            <div className={"section-description"}>
-                                Checking blood transfusion service staff availability is the process of determining
-                                whether the necessary
+                <Container>
+                    <Row>
+                        <Col md={7}>
+                            <div className={"reserve-time-image"}>
+                                <img src="/assets/images/reserve-time/reserve-time-doctor.png" alt=""/>
                             </div>
-                            <div className={"select-section"}>
-                                <div className={"mb-4 mt-5"}>
-                                    <Select options={date} placeholder={"Select Date"} className={"select-item"}
-                                            classNamePrefix="react-select"/>
+                        </Col>
+                        <Col md={5}>
+                            <div className="reserve-time-content">
+                                <SectionHeading title={"Reserve a time"}/>
+                                <div className={"section-description"}>
+                                    Checking blood transfusion service staff availability is the process of determining
+                                    whether the necessary
                                 </div>
-                                <div className={"mb-4"}>
-                                    <Select options={donationCamp} placeholder={"Select Blood Donation Camp"}
-                                            className={"select-item"} classNamePrefix="react-select"/>
+                                <div className={"select-section"}>
+                                    <div className={"mb-4 mt-5"}>
+                                        <Select options={date} placeholder={"Select Date"} className={"select-item"}
+                                                classNamePrefix="react-select"/>
+                                    </div>
+                                    <div className={"mb-4"}>
+                                        <Select options={donationCamp} placeholder={"Select Blood Donation Camp"}
+                                                className={"select-item"} classNamePrefix="react-select"/>
+                                    </div>
+                                    <div>
+                                        <Select options={timeSlot} placeholder={"Time Slot"} className={"select-item"}
+                                                classNamePrefix="react-select"/>
+                                    </div>
                                 </div>
-                                <div>
-                                    <Select options={timeSlot} placeholder={"Time Slot"} className={"select-item"}
-                                            classNamePrefix="react-select"/>
+                                <div className={"mt-4 button-row"}>
+                                    <Button disabled={true} className={"mx-4"}>Reserve</Button>
+                                    <Button>Search</Button>
                                 </div>
                             </div>
-                            <div className={"mt-4 button-row"}>
-                                <Button disabled={true} className={"mx-4"}>Reserve</Button>
-                                <Button>Search</Button>
-                            </div>
-                        </div>
 
 
-                    </Col>
-                </Row>
-            </Container>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            <Footer bgColor={"bg-pearlWhite"}/>
         </div>
+
     )
 }

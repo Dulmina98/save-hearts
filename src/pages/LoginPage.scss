@@ -1,0 +1,94 @@
+.login {
+
+  .login-image {
+    padding-top: 70px;
+    display: flex;
+    justify-content: end;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .login-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-weight: 500;
+
+    .create-account-description {
+      text-align: justify;
+      width: 90%;
+    }
+
+    .auth-form {
+      .select-section {
+        width: 95%;
+      }
+    }
+  }
+
+  .availability-check-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    .availability-check-description {
+      text-align: justify;
+      width: 90%;
+    }
+
+    .select-section {
+      width: 400px;
+    }
+
+    .button-row {
+      width: 400px;
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  .availability-col {
+    display: flex;
+    justify-content: center;
+
+    .availability-col-content {
+      padding: 40px;
+      background: #F2E1E1;
+      border-radius: 5px;
+      width: 400px;
+
+      .section-sub-heading-main {
+        display: flex;
+        justify-content: center;
+      }
+
+      .availability-item {
+        display: flex;
+        justify-content: center;
+
+        .availability-item-title {
+          width: 25%;
+          margin-left: 10%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          height: 50px;
+        }
+
+        .availability-item-amount {
+          width: 30%;
+          margin-left: 20%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          height: 50px;
+        }
+      }
+    }
+
+  }
+}

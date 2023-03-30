@@ -1,4 +1,5 @@
 .navigation-bar {
+  height: 60px;
 
   .navbar {
 
@@ -17,6 +18,10 @@
           &:hover {
             color: #C91A21;
           }
+        }
+
+        .logout-btn {
+          height: 52px;
         }
       }
     }
