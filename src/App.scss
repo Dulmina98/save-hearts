@@ -55,6 +55,11 @@ body {
       background: rgba(201, 26, 33, 0);
     }
 
+    &:active {
+      background-color: rgba(121, 19, 23, 0) !important;
+      color: #e33139 !important;
+    }
+
     &:hover {
       background: rgba(227, 49, 57, 0);
       color: #e33139;

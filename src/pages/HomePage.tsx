@@ -110,8 +110,9 @@ export function HomePage() {
                                     </div>
 
                                     <div className={"link-btn-main mt-5"}>
-                                        <Button className={"link-btn"}>Go to Dashboard <ChevronRight color={"#C91A21"}
-                                                                                                     className={"mb-1 chevron-right"}/></Button>
+                                        <Button className={"link-btn"} href={'/statics'}>Go to Statics <ChevronRight
+                                            color={"#C91A21"}
+                                            className={"mb-1 chevron-right"}/></Button>
                                     </div>
                                 </div>
                             </Col>
