@@ -29,20 +29,6 @@ ChartJS.register(
     Legend
 );
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            label: 'Blood amount',
-            data: [1102, 1753, 1672, 2120, 721, 3133, 1082, 1652, 2359, 1365, 2512, 1982],
-            borderColor: 'rgb(201, 26, 33)',
-            backgroundColor: 'rgba(201, 26, 33, 0.5)',
-        },
-    ],
-};
-
 
 export function AdminDashboardPage() {
 

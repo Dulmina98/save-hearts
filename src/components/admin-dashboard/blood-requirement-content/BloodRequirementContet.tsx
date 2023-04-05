@@ -1,8 +1,7 @@
 import "./BloodRequirementContent.scss"
 import {Button, Form, Modal} from "react-bootstrap";
 import {Line} from "react-chartjs-2";
-import React, {useState} from "react";
-import {data} from "../../../pages/AdminDashboardPage";
+import React, {useEffect, useState} from "react";
 import Select from "react-select";
 import {SectionSubHeading} from "../../SectionSubHeading";
 import axios from "axios";
@@ -15,7 +14,64 @@ export function BloodRequirementContet() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    let predictData
+
+    /*
+       let statics: { [key: string]: number }[] = [  { "January": 100 },  { "February": 0 },  { "March": 0 },  { "April": 0 }];
+       async function loadData() {
+           const config = {
+
+               method: 'get',
+               credentials:true,
+               url: 'http://localhost:5000/values'
+           }
+
+           let res = await axios(config)
+           statics = res.data
+           console.log(statics)
+
+
+       }
+       const labels = statics.map(obj => Object.keys(obj)[0]);
+       const data = {
+           labels,
+           datasets: [
+               {
+                   label: 'Blood amount',
+                   data: statics.map(obj => Object.values(obj)[0]),
+                   borderColor: 'rgb(201, 26, 33)',
+                   backgroundColor: 'rgba(201, 26, 33, 0.5)',
+               },
+           ],
+       };*/
+
+    const [statics, setStatics] = useState([
+        {"January": 0},
+        {"February": 0},
+        {"March": 0},
+        {"April": 0}
+    ]);
+    useEffect(() => {
+        async function fetchData() {
+            const response = await axios.get('http://localhost:5000/values');
+            setStatics(response.data);
+        }
+
+        fetchData();
+    }, []);
+    const labels = statics.map(obj => Object.keys(obj)[0]);
+    const data = {
+        labels,
+        datasets: [
+            {
+                label: 'Blood amount',
+                data: statics.map(obj => Object.values(obj)[0]),
+                borderColor: 'rgb(201, 26, 33)',
+                backgroundColor: 'rgba(201, 26, 33, 0.5)',
+            },
+        ],
+    };
+
+
     const months = [
         {value: 1, label: 'January'},
         {value: 2, label: 'February'},
@@ -31,20 +87,7 @@ export function BloodRequirementContet() {
         {value: 12, label: 'December'},
     ];
 
-    async function loadData() {
-        const config = {
 
-            method: 'get',
-            credentials: true,
-            url: 'http://localhost:5000/values'
-        }
-
-        let res = await axios(config)
-        predictData = res;
-
-        console.log(res.data)
-
-    }
 
     return (
         <>
@@ -56,7 +99,7 @@ export function BloodRequirementContet() {
                         <div>Amount of blood need to next month</div>
                     </div>
                     <div className="button-row mt-5">
-                        <Button onClick={loadData} className={"py-3"}>Generate using AI model</Button>
+                        <Button className={"py-3"}>Generate using AI model</Button>
                         <Button onClick={handleShow} className={"py-3"}>Enter Manually</Button>
                     </div>
 
