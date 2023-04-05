@@ -11,6 +11,7 @@ import {SignupPage} from "./pages/SignupPage";
 import {LoginPage} from "./pages/LoginPage";
 import {useAuthContext} from "./hooks/useAuthContext";
 import {useAdmin} from "./hooks/useAdmin";
+import {ContactUsPage} from "./pages/ContactUsPage";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
                     <Route path={'/login'} element={<LoginPage/>}/>
                     <Route path={'/organize-camp'} element={<OrganizeCampPage/>}/>
                     <Route path={'/reserve-time'} element={<ReserveTimePage/>}/>
+                    <Route path={'/contact-us'} element={<ContactUsPage/>}/>
                     {user && isAdmin && <Route path={'/admin-dashboard'} element={<AdminDashboardPage/>}/>}
                 </Routes>
             </BrowserRouter>
