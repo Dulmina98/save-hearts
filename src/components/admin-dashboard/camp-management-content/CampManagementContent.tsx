@@ -30,7 +30,7 @@ export function CampManagementContent() {
         {value: '5', label: 'Jaffna'},
     ]
 
-    var docRef = projectFirestore.collection("campManagement").doc(district);
+    let docRef = projectFirestore.collection("campManagement").doc(district);
 
     docRef.get().then((doc) => {
         if (doc.exists) {

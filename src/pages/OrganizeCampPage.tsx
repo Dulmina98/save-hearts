@@ -2,50 +2,45 @@ import {CoverImage} from "../components/CoverImage";
 import {Button, Col, Container, Row} from "react-bootstrap";
 import {SectionHeading} from "../components/SectionHeading";
 import "./OragnizeCampPage.scss"
-import React from "react";
+import React, {useState} from "react";
 import {SectionSubHeading} from "../components/SectionSubHeading";
 import Select from "react-select";
 import {Footer} from "../components/Footer";
+import {projectFirestore} from "../firebase/config";
 
 export function OrganizeCampPage() {
 
-    const district = [
-        {value: 1, label: 'Gampaha'},
-        {value: 2, label: 'Colombo'},
-        {value: 3, label: 'Kalutara'},
-        {value: 4, label: 'Galle'},
-        {value: 5, label: 'Matara'},
-        {value: 6, label: 'Hambantota'},
-        {value: 7, label: 'Matale'},
-        {value: 8, label: 'Kandy'},
-        {value: 9, label: 'Nuwara Eliya'},
-        {value: 10, label: 'Puttalam'},
-        {value: 11, label: 'Kurunegala'},
-        {value: 12, label: 'Badulla'},
-        {value: 13, label: 'Monaragala'},
-        {value: 14, label: 'Anuradhapura'},
-        {value: 15, label: 'Polonnaruwa'},
-        {value: 16, label: 'Kegalla'},
-        {value: 17, label: 'Ratnapura'},
-        {value: 18, label: 'Jaffna'},
-        {value: 19, label: 'Kilinochchi'},
-        {value: 20, label: 'Mannar'},
-        {value: 21, label: 'Mullaitivu'},
-        {value: 22, label: 'Vavuniya'},
-        {value: 23, label: 'Trincomalee'},
-        {value: 24, label: 'Batticaloa'},
-        {value: 25, label: 'Ampara'},
-    ];
+    const [district, setDistrict] = useState("Select District")
+    const [bedsAmount, setBedsAmount] = useState(0)
+    const [staffsAmount, setStaffsAmount] = useState(0)
+    const [mobilesAmount, setMobilesAmount] = useState(0)
+    const [kitsAmount, setKitsAmount] = useState(0)
 
-    const date = [
-        {value: 1, label: '02nd March 2023'},
-        {value: 2, label: '06th March 2023'},
-        {value: 3, label: '07th March 2023'},
-        {value: 4, label: '09th March 2023'},
-        {value: 5, label: '12th March 2023'},
-        {value: 6, label: '16th March 2023'},
-        {value: 7, label: '22th March 2023'},
-    ];
+    const districts = [
+        {value: '1', label: 'Colombo'},
+        {value: '2', label: 'Matara'},
+        {value: '3', label: 'Galle'},
+        {value: '4', label: 'Kandy'},
+        {value: '5', label: 'Jaffna'},
+    ]
+
+    let docRef = projectFirestore.collection("campManagement").doc(district);
+
+    docRef.get().then((doc) => {
+        if (doc.exists) {
+            const managementUnits = doc.data();
+            setBedsAmount(managementUnits?.Beds);
+            setStaffsAmount(managementUnits?.Staff)
+            setMobilesAmount(managementUnits?.Mobiles)
+            setKitsAmount(managementUnits?.DonationKits)
+
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+    }).catch((error) => {
+        console.log("Error getting document:", error);
+    });
 
     return (
         <div>
@@ -97,13 +92,15 @@ export function OrganizeCampPage() {
                                     </div>
                                     <div className={"select-section"}>
                                         <div className={"mb-4 mt-5"}>
-                                            <Select options={district} placeholder={"District"}
+                                            <Select options={districts} placeholder={"District"}
+                                                    value={district ? {value: district, label: district} : null}
                                                     className={"select-item"}
-                                                    classNamePrefix="react-select"/>
-                                        </div>
-                                        <div className={"mb-4"}>
-                                            <Select options={date} placeholder={"Date"}
-                                                    className={"select-item"} classNamePrefix="react-select"/>
+                                                    classNamePrefix="react-select"
+                                                    onChange={(selectedOption) => {
+                                                        if (selectedOption) {
+                                                            setDistrict(selectedOption.label)
+                                                        }
+                                                    }}/>
                                         </div>
                                     </div>
                                     <div className={"button-row"}>
@@ -117,25 +114,25 @@ export function OrganizeCampPage() {
                                         <div className="section-sub-heading-main">
                                             <SectionSubHeading title={"Availability"}/>
                                         </div>
-                                        <div className="availability-item mt-4">
-                                            <div className="availability-item-title">Camps On That Day</div>
-                                            <div className="availability-item-amount">N/A</div>
-                                        </div>
                                         <div className="availability-item mt-1">
                                             <div className="availability-item-title">Mobiles</div>
-                                            <div className="availability-item-amount">N/A</div>
+                                            <div
+                                                className="availability-item-amount">{mobilesAmount ? mobilesAmount : 'N/A'}</div>
                                         </div>
                                         <div className="availability-item mt-1">
                                             <div className="availability-item-title">Staff</div>
-                                            <div className="availability-item-amount">N/A</div>
+                                            <div
+                                                className="availability-item-amount">{staffsAmount ? staffsAmount : 'N/A'}</div>
                                         </div>
                                         <div className="availability-item mt-1">
                                             <div className="availability-item-title">Beds</div>
-                                            <div className="availability-item-amount">N/A</div>
+                                            <div
+                                                className="availability-item-amount">{bedsAmount ? bedsAmount : 'N/A'}</div>
                                         </div>
                                         <div className="availability-item mt-1">
                                             <div className="availability-item-title">Blood Donation Kits</div>
-                                            <div className="availability-item-amount">N/A</div>
+                                            <div
+                                                className="availability-item-amount">{kitsAmount ? kitsAmount : 'N/A'}</div>
                                         </div>
                                     </div>
                                 </div>
