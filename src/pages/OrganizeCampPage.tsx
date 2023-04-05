@@ -15,6 +15,7 @@ export function OrganizeCampPage() {
     const [staffsAmount, setStaffsAmount] = useState(0)
     const [mobilesAmount, setMobilesAmount] = useState(0)
     const [kitsAmount, setKitsAmount] = useState(0)
+    const [tempDistrict, setTempDisctrict] = useState("")
 
     const districts = [
         {value: '1', label: 'Colombo'},
@@ -41,6 +42,10 @@ export function OrganizeCampPage() {
     }).catch((error) => {
         console.log("Error getting document:", error);
     });
+
+    function handleSearch(selectedOption: string) {
+        setDistrict(selectedOption)
+    }
 
     return (
         <div>
@@ -92,19 +97,25 @@ export function OrganizeCampPage() {
                                     </div>
                                     <div className={"select-section"}>
                                         <div className={"mb-4 mt-5"}>
+                                            <div className="district-select-note">Note: These statistics are only for
+                                                the current month.
+                                            </div>
                                             <Select options={districts} placeholder={"District"}
-                                                    value={district ? {value: district, label: district} : null}
+                                                    value={tempDistrict ? {
+                                                        value: tempDistrict,
+                                                        label: tempDistrict
+                                                    } : null}
                                                     className={"select-item"}
                                                     classNamePrefix="react-select"
                                                     onChange={(selectedOption) => {
                                                         if (selectedOption) {
-                                                            setDistrict(selectedOption.label)
+                                                            setTempDisctrict(selectedOption.label)
                                                         }
                                                     }}/>
                                         </div>
                                     </div>
                                     <div className={"button-row"}>
-                                        <Button>Search</Button>
+                                        <Button onClick={() => handleSearch(tempDistrict)}>Search</Button>
                                     </div>
                                 </div>
                             </Col>
