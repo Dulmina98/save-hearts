@@ -1,7 +1,7 @@
 import "./AdminDashboardPage.scss"
 import {Col, Container, Nav, Row} from "react-bootstrap";
 import {SectionHeading} from "../components/SectionHeading";
-import React, {useState} from "react";
+
 import {
     CategoryScale,
     Chart as ChartJS,
@@ -17,7 +17,7 @@ import {BloodRequirementContet} from "../components/admin-dashboard/blood-requir
 import {StatisticsContent} from "../components/admin-dashboard/statistics-content/StatisticsContent";
 import {UpcomingCampsContent} from "../components/admin-dashboard/upcoming-camps/UpcomingCampsContent";
 import {CampManagementContent} from "../components/admin-dashboard/camp-management-content/CampManagementContent";
-
+import React, {useState} from 'react';
 
 ChartJS.register(
     CategoryScale,
@@ -29,19 +29,6 @@ ChartJS.register(
     Legend
 );
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            label: 'Blood amount',
-            data: [1102, 1753, 1672, 2120, 721, 3133, 1082, 1652, 2359, 1365, 2512, 1982],
-            borderColor: 'rgb(201, 26, 33)',
-            backgroundColor: 'rgba(201, 26, 33, 0.5)',
-        },
-    ],
-};
 
 export function AdminDashboardPage() {
 
