@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="Install">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blood_Forecasting_System_v1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Blood_Forecasting_System_v1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KNN_Algorithm_Test_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/KNN_Algorithm_Test_3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KNN_Algorithm_test_2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/KNN_Algorithm_test_2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml/arima_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ml/arima_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin-dashboard/blood-requirement-content/BloodRequirementContet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin-dashboard/blood-requirement-content/BloodRequirementContet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdminDashboardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdminDashboardPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -38,11 +48,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dulmina/Desktop/Save_Hearts/save-hearts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/1New folder (2)/flask-api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Dulmina\\Desktop\\Save_Hearts\\save-hearts\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\New folder\\save-hearts\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -56,6 +68,9 @@
       <updated>1676567344513</updated>
       <workItem from="1676567345689" duration="76000" />
       <workItem from="1676567690419" duration="377000" />
+      <workItem from="1680701741862" duration="1486000" />
+      <workItem from="1680711732621" duration="1709000" />
+      <workItem from="1680715160340" duration="7523000" />
     </task>
     <task id="LOCAL-00001" summary="Install bootstrap and sass">
       <created>1676567960899</created>

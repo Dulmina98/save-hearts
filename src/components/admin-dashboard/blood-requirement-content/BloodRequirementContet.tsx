@@ -5,6 +5,8 @@ import React, {useState} from "react";
 import {data} from "../../../pages/AdminDashboardPage";
 import Select from "react-select";
 import {SectionSubHeading} from "../../SectionSubHeading";
+import axios from "axios";
+
 
 export function BloodRequirementContet() {
 
@@ -13,6 +15,7 @@ export function BloodRequirementContet() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    let predictData
     const months = [
         {value: 1, label: 'January'},
         {value: 2, label: 'February'},
@@ -28,6 +31,20 @@ export function BloodRequirementContet() {
         {value: 12, label: 'December'},
     ];
 
+    async function loadData() {
+        const config = {
+
+            method: 'get',
+            credentials: true,
+            url: 'http://localhost:5000/values'
+        }
+
+        let res = await axios(config)
+        predictData = res;
+
+        console.log(res.data)
+
+    }
 
     return (
         <>
@@ -39,7 +56,7 @@ export function BloodRequirementContet() {
                         <div>Amount of blood need to next month</div>
                     </div>
                     <div className="button-row mt-5">
-                        <Button className={"py-3"}>Generate using AI model</Button>
+                        <Button onClick={loadData} className={"py-3"}>Generate using AI model</Button>
                         <Button onClick={handleShow} className={"py-3"}>Enter Manually</Button>
                     </div>
 
@@ -50,6 +67,7 @@ export function BloodRequirementContet() {
                     <Line data={data}/>
                 </div>
             </div>
+
 
             <Modal show={show} onHide={handleClose}
                    aria-labelledby="contained-modal-title-vcenter"
