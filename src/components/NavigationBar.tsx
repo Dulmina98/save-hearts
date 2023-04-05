@@ -31,7 +31,7 @@ export function NavigationBar() {
                             <Nav.Link disabled={true} href="#link" className={"mx-2"}>Statistics</Nav.Link>
                             <Nav.Link href="/organize-camp" className={"mx-2"}>Organize a Camp</Nav.Link>
                             <Nav.Link href="/reserve-time" className={"mx-2"}>Reserve a Time</Nav.Link>
-                            <Nav.Link disabled={true} href="#link" className={"mx-2"}>Contact Us</Nav.Link>
+                            <Nav.Link href='/contact-us' className={"mx-2"}>Contact Us</Nav.Link>
                             {user && isAdmin &&
                                 <Nav.Link href="/admin-dashboard" className={"mx-2"}>Dashboard</Nav.Link>}
                             {!user && <Nav.Link href="/login"><Button className={"px-4 py-2"}>Login</Button></Nav.Link>}
