@@ -90,9 +90,9 @@ pipeline {
         emailext (
           subject: "Save Heart App Deployed to Staging - Approval Required",
           body: "The Save Heart App has been deployed to the staging environment and is ready for approval. Please review the changes and approve or reject the deployment.",
-          to: "admin@example.com",
-          from: "jenkins@example.com",
-          replyTo: "jenkins@example.com",
+          to: "test123@gmail.com",
+          from: "admin@savehearts.lk",
+          replyTo: "test123@gmail.com",
           attachLog: true
         )
       }
@@ -101,3 +101,32 @@ pipeline {
           // Archive the code coverage report
           archiveArtifacts artifacts: 'htmlcov/**'
           publishHTML(target: [allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'htmlcov', reportFiles: 'index.html
+
+pipeline {
+  agent any
+  
+  stages {
+    stage('Build') {
+      steps {
+        sh 'mvn clean package'
+      }
+    }
+    
+    stage('Test') {
+      steps {
+        sh 'mvn test'
+      }
+    }
+    
+    stage('Deploy') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'docker-hub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+          sh 'docker build -t your-docker-username/blood-bank-prediction .'
+          sh 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
+          sh 'docker push your-docker-username/blood-bank-prediction'
+        }
+        sh 'kubectl apply -f kubernetes.yaml'
+      }
+    }
+  }
+}
