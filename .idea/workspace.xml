@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="Update styles and add navigation link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin-dashboard/camp-management-content/CampManagementContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin-dashboard/camp-management-content/CampManagementContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdminDashboardPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdminDashboardPage.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feat/dulmina" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,6 +65,7 @@
       <workItem from="1680553928726" duration="238000" />
       <workItem from="1680554393303" duration="128000" />
       <workItem from="1680676243563" duration="5275000" />
+      <workItem from="1680718225438" duration="6254000" />
     </task>
     <task id="LOCAL-00001" summary="Install bootstrap and sass">
       <created>1676567960899</created>
