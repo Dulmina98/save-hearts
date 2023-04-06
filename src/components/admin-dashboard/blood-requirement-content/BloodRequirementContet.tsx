@@ -106,7 +106,7 @@ export function BloodRequirementContet() {
                 </div>
                 <div className="past-blood-requirement-chart mb-5">
                     <div className="dashboard-section-sub-title mb-4"><SectionSubHeading
-                        title={"Past year required blood amount"}/></div>
+                        title={"Upcoming months blood requirment"}/></div>
                     <Line data={data}/>
                 </div>
             </div>
