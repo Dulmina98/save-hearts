@@ -90,7 +90,7 @@ export function StatisticsPage() {
 
     const forecastedDataLabel = statics.map(obj => Object.keys(obj)[0]);
     const forecastedData = {
-        forecastedDataLabel,
+        labels: forecastedDataLabel,
         datasets: [
             {
                 label: 'Blood amount',
