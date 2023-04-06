@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admin-dashboard/camp-management-content/CampManagementContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin-dashboard/camp-management-content/CampManagementContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admin-dashboard/statistics-content/BloodGroupAmountItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin-dashboard/statistics-content/BloodGroupAmountItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admin-dashboard/statistics-content/StatisticsContent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin-dashboard/statistics-content/StatisticsContent.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admin-dashboard/statistics-content/StatisticsContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin-dashboard/statistics-content/StatisticsContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680727986573</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Integrate the firestore database with blood unit management">
+      <created>1680753776075</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680753776075</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Integrate the firestore database forecasted blood amount">
+      <created>1680756174626</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680756174626</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +151,9 @@
     <MESSAGE value="Update styles and add navigation links to homepage" />
     <MESSAGE value="Integrate the firestore database with admin dashboard to manage camp units" />
     <MESSAGE value="Integrate the firestore database with organize a camp page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrate the firestore database with organize a camp page" />
+    <MESSAGE value="Integrate the firestore database with blood unit management" />
+    <MESSAGE value="Integrate the firestore database forecasted blood amount" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integrate the firestore database forecasted blood amount" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
