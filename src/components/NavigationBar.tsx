@@ -28,7 +28,7 @@ export function NavigationBar() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link disabled={true} href="#link" className={"mx-2"}>Statistics</Nav.Link>
+                            <Nav.Link href="/statistics" className={"mx-2"}>Statistics</Nav.Link>
                             <Nav.Link href="/organize-camp" className={"mx-2"}>Organize a Camp</Nav.Link>
                             <Nav.Link href="/reserve-time" className={"mx-2"}>Reserve a Time</Nav.Link>
                             <Nav.Link href='/contact-us' className={"mx-2"}>Contact Us</Nav.Link>

@@ -1,6 +1,6 @@
 import "./BloodGroupAmountItem.scss"
 
-export function BloodGroupAmountItem(props: { bloodGroup: string, amount: number }) {
+export function BloodGroupAmountItem(props: { bloodGroup: string, amount?: number }) {
 
     return (
         <div className="blood-group-amount-item mb-5">

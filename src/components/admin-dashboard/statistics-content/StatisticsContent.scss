@@ -12,6 +12,15 @@
     }
   }
 
+  .update-units-button-row {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      width: 200px;
+    }
+  }
+
   .this-month-statistics-main {
     width: 80%;
     height: 150px;
