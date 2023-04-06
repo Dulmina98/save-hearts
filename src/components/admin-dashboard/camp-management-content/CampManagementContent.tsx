@@ -65,9 +65,6 @@ export function CampManagementContent() {
             [name]: value,
         }));
     };
-    const handleDistrictChange = (selectedOption: any) => {
-        setDistrict(selectedOption.label);
-    }
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 

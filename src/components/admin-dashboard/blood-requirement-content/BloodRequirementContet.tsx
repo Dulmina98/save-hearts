@@ -5,6 +5,7 @@ import React, {useEffect, useState} from "react";
 import Select from "react-select";
 import {SectionSubHeading} from "../../SectionSubHeading";
 import axios from "axios";
+import {projectFirestore} from "../../../firebase/config";
 
 
 export function BloodRequirementContet() {
@@ -44,20 +45,31 @@ export function BloodRequirementContet() {
            ],
        };*/
 
+    let docRef = projectFirestore.collection("statistics").doc("forecastedBloodAmount");
+
     const [statics, setStatics] = useState([
         {"January": 0},
         {"February": 0},
         {"March": 0},
-        {"April": 0}
+        {"April": 0},
+        {"May": 0},
+        {"June": 0},
+        {"July": 0},
+        {"August": 0},
+        {"September": 0},
+        {"October": 0},
+        {"November": 0},
+        {"December": 0}
     ]);
-    useEffect(() => {
-        async function fetchData() {
-            const response = await axios.get('http://localhost:5000/values');
-            setStatics(response.data);
-        }
+    const fetchData = async () => {
+        const response = await axios.get("http://localhost:5000/values");
+        setStatics(response.data);
+    };
 
+    useEffect(() => {
         fetchData();
     }, []);
+
     const labels = statics.map(obj => Object.keys(obj)[0]);
     const data = {
         labels,
@@ -69,6 +81,44 @@ export function BloodRequirementContet() {
                 backgroundColor: 'rgba(201, 26, 33, 0.5)',
             },
         ],
+    };
+
+    const updateData = () => {
+
+        const januaryValue = statics[0].January;
+        const februaryValue = statics[1].February;
+        const marchValue = statics[2].March;
+        const aprilValue = statics[3].April;
+        const mayValue = statics[4].May;
+        const juneValue = statics[5].June;
+        const julyValue = statics[6].July;
+        const augustValue = statics[7].August;
+        const septemberValue = statics[8].September;
+        const octoberValue = statics[9].October;
+        const novemberValue = statics[10].November;
+        const decemberValue = statics[11].December;
+
+        docRef.update({
+            January: januaryValue,
+            February: februaryValue,
+            March: marchValue,
+            April: aprilValue,
+            May: mayValue,
+            June: juneValue,
+            July: julyValue,
+            August: augustValue,
+            September: septemberValue,
+            October: octoberValue,
+            November: novemberValue,
+            December: decemberValue,
+        })
+            .then(() => {
+                console.log("Document successfully updated!");
+                handleClose();
+            })
+            .catch((error) => {
+                console.error("Error updating document: ", error);
+            });
     };
 
 
@@ -99,8 +149,8 @@ export function BloodRequirementContet() {
                         <div>Amount of blood need to next month</div>
                     </div>
                     <div className="button-row mt-5">
-                        <Button className={"py-3"}>Generate using AI model</Button>
-                        <Button onClick={handleShow} className={"py-3"}>Enter Manually</Button>
+                        <Button onClick={fetchData} className={"py-3"}>Generate using AI model</Button>
+                        <Button onClick={updateData} className={"py-3"}>Upload to Database</Button>
                     </div>
 
                 </div>
