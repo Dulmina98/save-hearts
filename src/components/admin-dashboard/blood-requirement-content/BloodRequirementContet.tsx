@@ -144,11 +144,7 @@ export function BloodRequirementContet() {
             <div className={"blood-requirement-content dashboard-tab-content"}>
 
                 <div className="py-5 mb-5 required-blood-amount-content">
-                    <div className={"required-blood-amount-text"}>
-                        <div className={"required-blood-amount red-color"}>1124</div>
-                        <div>Amount of blood need to next month</div>
-                    </div>
-                    <div className="button-row mt-5">
+                    <div className="button-row">
                         <Button onClick={fetchData} className={"py-3"}>Generate using AI model</Button>
                         <Button onClick={updateData} className={"py-3"}>Upload to Database</Button>
                     </div>
@@ -156,7 +152,7 @@ export function BloodRequirementContet() {
                 </div>
                 <div className="past-blood-requirement-chart mb-5">
                     <div className="dashboard-section-sub-title mb-4"><SectionSubHeading
-                        title={"Upcoming months blood requirment"}/></div>
+                        title={"Next year required blood amount"}/></div>
                     <Line data={data}/>
                 </div>
             </div>
