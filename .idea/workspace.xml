@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce711f9b-3e8c-432a-8196-78562e49098f" name="Changes" comment="Integrate the firestore database forecasted blood amount">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/OrganizeCampPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OrganizeCampPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/StatisticsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StatisticsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin-dashboard/blood-requirement-content/BloodRequirementContet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin-dashboard/blood-requirement-content/BloodRequirementContet.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +65,7 @@
       <workItem from="1680554393303" duration="128000" />
       <workItem from="1680676243563" duration="5275000" />
       <workItem from="1680718225438" duration="7596000" />
+      <workItem from="1680762265226" duration="1500000" />
     </task>
     <task id="LOCAL-00001" summary="Install bootstrap and sass">
       <created>1676567960899</created>
