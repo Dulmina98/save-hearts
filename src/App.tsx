@@ -13,6 +13,7 @@ import {useAuthContext} from "./hooks/useAuthContext";
 import {useAdmin} from "./hooks/useAdmin";
 import {ContactUsPage} from "./pages/ContactUsPage";
 import {StatisticsPage} from "./pages/StatisticsPage";
+import {CampRequestForm} from "./pages/CampRequestForm";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
                     <Route path={'/login'} element={<LoginPage/>}/>
                     <Route path={'/statistics'} element={<StatisticsPage/>}/>
                     <Route path={'/organize-camp'} element={<OrganizeCampPage/>}/>
+                    <Route path={'/camp-request-form'} element={<CampRequestForm/>}/>
                     <Route path={'/reserve-time'} element={<ReserveTimePage/>}/>
                     <Route path={'/contact-us'} element={<ContactUsPage/>}/>
                     {user && isAdmin && <Route path={'/admin-dashboard'} element={<AdminDashboardPage/>}/>}

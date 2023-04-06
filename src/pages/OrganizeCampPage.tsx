@@ -51,7 +51,7 @@ export function OrganizeCampPage() {
         <div>
             <div className="organize-camp page">
                 <CoverImage imgPath={"/assets/images/organize-camp/organize-camp-cover-image.png"}
-                            heading={"Blood donation camp management"}
+                            heading={"Blood Donation Camp Organizer"}
                             headingDescription={"Online blood donation camp management is a system for organizing and coordinating blood donation events through an online platform."}/>
 
                 <div className={"bg-moonlight"}>
